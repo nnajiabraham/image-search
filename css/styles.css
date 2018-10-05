@@ -1,0 +1,78 @@
+body {
+    background-color: #24292e;
+}
+
+.searchbar {
+    border: 0.1px #2e362e solid;
+    border-radius: 0.03em;
+    outline: none;
+    width: 90%;
+    font-size: 2rem;
+    background-color: #404c57bb;
+    caret-color: teal;
+    transition: all .5s ease-in-out;
+    font-family: serif;
+    font-weight: bolder;
+    padding-right: 10%;
+}
+
+.searchbar:focus {
+    background: rgb(214, 214, 214);
+    color: teal;
+}
+
+.hint-text {
+    border-color: silver;
+    color: rgb(153, 150, 150);
+    width: 19%;
+    border-style: solid;
+    position: relative;
+    display: inline;
+    bottom: 1.8em;
+    left: 65%; /* Add media queries */
+    }
+    
+@media(min-width: 768px) {
+.hint-text {
+    width: 19%;
+    bottom: 1.8em;
+    left: 80%; /* Add media queries */
+}
+}
+
+.intro-text {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.btn-warning {
+    font-weight: 1000;
+    border: 0.03em rgb(72, 180, 252) solid;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    position: relative;
+    top: 2em;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    border-color: rgb(79, 18, 190);
+    border-width: 0.3em;
+}
+
+.btn-warning:active {
+    border-color: blue;
+}
+
+.wrapper-results {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.result {
+    width: 100%;
+}
