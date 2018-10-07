@@ -1,5 +1,20 @@
 const searchbar = $(".searchbar");
+const searchicon = $(".search-icon");
 const resultswrapper = document.getElementById("wrapper-results");
+
+
+// Search functionality provided for both Enter key and search icon.
+searchicon.on("click", (e) => {
+        // first remove previous search results if existent.
+        if(UITrafficController.resultsExist) {
+        while (resultswrapper.firstChild) {
+            resultswrapper.firstChild.remove();
+        }
+    }
+        activate_query(searchbar.val()).then(() => {
+            assign_images();
+        })
+    })
 
 searchbar.on("keypress", (e) => {
     // if key = Enter

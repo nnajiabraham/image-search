@@ -13,31 +13,23 @@ body {
     transition: all .5s ease-in-out;
     font-family: serif;
     font-weight: bolder;
-    padding-right: 10%;
+}
+
+.search-icon {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    display: inline;
+    margin-left: -1em;
+    background-color: silver;
+    padding: 0.6em;
+    width: 8%;
+    text-align: center;
 }
 
 .searchbar:focus {
     background: rgb(214, 214, 214);
     color: teal;
-}
-
-.hint-text {
-    border-color: silver;
-    color: rgb(153, 150, 150);
-    width: 19%;
-    border-style: solid;
-    position: relative;
-    display: inline;
-    bottom: 1.8em;
-    left: 65%; /* Add media queries */
-    }
-    
-@media(min-width: 768px) {
-.hint-text {
-    width: 19%;
-    bottom: 1.8em;
-    left: 80%; /* Add media queries */
-}
 }
 
 .intro-text {
