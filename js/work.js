@@ -58,11 +58,15 @@ var UITrafficControllerProxy = new Proxy(UITrafficController, {
 /* when the searchbar is actively being used and no results exist yet, hide the intro-text.
    when the searchbar is unfocused, no results exist, show the intro-text.*/
 $(searchbar).on("focus", () => {
+        searchbar.css("background-color", "rgb(214, 214, 214)")
+        
         if(!UITrafficController.resultsExist) $(".intro-text").hide();
 })
 
 $(searchbar).on("blur", () => {
-    if(!UITrafficController.resultsExist) $(".intro-text").show();
+        searchbar.css("background-color", "#404c57bb")
+
+        if(!UITrafficController.resultsExist) $(".intro-text").show();
 })
 
 

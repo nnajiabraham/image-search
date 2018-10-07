@@ -1,3 +1,4 @@
+/* Add cross-platform support */
 body {
     background-color: #24292e;
 }
@@ -13,6 +14,7 @@ body {
     transition: all .5s ease-in-out;
     font-family: serif;
     font-weight: bolder;
+    color: teal;
 }
 
 .search-icon {
@@ -25,11 +27,6 @@ body {
     padding: 0.6em;
     width: 8%;
     text-align: center;
-}
-
-.searchbar:focus {
-    background: rgb(214, 214, 214);
-    color: teal;
 }
 
 .intro-text {
