@@ -1,6 +1,9 @@
-/* Add cross-platform support */
 body {
     background-color: #24292e;
+}
+
+.search-bar-wrapper {
+    margin-bottom: 0.5em;
 }
 
 .searchbar {
@@ -9,7 +12,7 @@ body {
     outline: none;
     width: 90%;
     font-size: 2rem;
-    background-color: #404c57bb;
+    background-color: hsla(210, 14%, 30%, 0.753);
     caret-color: teal;
     transition: all .5s ease-in-out;
     font-family: serif;
@@ -27,6 +30,11 @@ body {
     padding: 0.6em;
     width: 8%;
     text-align: center;
+    transition: background .3s ease-in-out;
+}
+
+.search-icon:active {
+    background-color: white;
 }
 
 .intro-text {
