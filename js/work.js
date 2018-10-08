@@ -64,7 +64,7 @@ $(searchbar).on("focus", () => {
 })
 
 $(searchbar).on("blur", () => {
-        searchbar.css("background-color", "#404c57bb")
+        searchbar.css("background-color", "#404c57")
 
         if(!UITrafficController.resultsExist) $(".intro-text").show();
 })
